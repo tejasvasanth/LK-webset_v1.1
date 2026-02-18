@@ -1,31 +1,41 @@
-import { Database, Box, Zap, HardDrive, DollarSign, ArrowRight } from 'lucide-react';
+import { Cpu, Database, BarChart3, Box, Zap, HardDrive, DollarSign, ArrowRight } from 'lucide-react';
 
 export default function Capabilities() {
   const capabilities = [
     {
+      icon: Cpu,
+      title: 'Compute Optimization',
+      description: 'Continuously optimize virtual machines and compute services through intelligent rightsizing, idle resource elimination, and workload-aware scaling — reducing cost while maintaining application performance.'
+    },
+    {
       icon: Database,
-      title: 'Databricks Cost & Query Optimization',
-      description: 'Identify idle clusters, inefficient Spark jobs, and costly queries. Reduce compute waste while maintaining performance.'
+      title: 'Database Optimization',
+      description: 'Optimize managed database services such as RDS, Azure SQL, and other vCore/DTU-based deployments by identifying overprovisioned or underutilized instances while preserving performance requirements.'
+    },
+    {
+      icon: BarChart3,
+      title: 'Databricks Optimization',
+      description: 'Reduce inefficient clusters and expensive queries while ensuring analytics workloads continue to meet performance expectations.'
     },
     {
       icon: Box,
       title: 'Kubernetes Optimization',
-      description: 'Improve container density, autoscaling efficiency, and node utilization with automated recommendations and execution.'
+      description: 'Optimize nodes, pods, and cluster utilization safely to reduce waste while maintaining workload reliability and scalability.'
     },
     {
       icon: Zap,
-      title: 'Agentic Spot Instance Orchestration',
-      description: 'Predict interruption risk, rebalance workloads dynamically, and maximize compute savings without compromising reliability.'
+      title: 'Agentic Spot Orchestration',
+      description: 'Leverage spot capacity intelligently to maximize compute savings while protecting workloads from interruptions.'
     },
     {
       icon: HardDrive,
-      title: 'Intelligent S3 Storage Compression',
-      description: 'Automatically compress infrequently accessed data. Seamlessly decompress on demand without disrupting applications.'
+      title: 'Intelligent Storage & Disk Optimization',
+      description: 'Reduce storage costs by compressing infrequently accessed data while also identifying idle disks, unattached volumes, oversized disks, and managing snapshots to meet business recovery and retention requirements — all without impacting application access.'
     },
     {
       icon: DollarSign,
-      title: 'Application-Level Cost Attribution',
-      description: 'Map infrastructure spend to services, teams, and business units to understand true total cost of ownership.'
+      title: 'Application Cost & TCO Visibility',
+      description: 'Map infrastructure spend to applications and business services to understand true cost drivers and enable smarter optimization decisions.'
     }
   ];
 
@@ -34,11 +44,8 @@ export default function Capabilities() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Comprehensive Cloud Optimization Capabilities
+            Capability Highlights
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            End-to-end visibility and optimization across every layer of your cloud infrastructure
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

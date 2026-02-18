@@ -1,4 +1,4 @@
-import { Brain, Eye, Lightbulb, Zap, ArrowRight } from 'lucide-react';
+import { Brain, Eye, Lightbulb, Zap, ArrowRight, Shield, HardDrive, Lock } from 'lucide-react';
 
 export default function AgenticAI() {
   return (
@@ -6,73 +6,88 @@ export default function AgenticAI() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Optimization That Executes, Not Just Recommends
+            Optimization That Executes — Without Compromising Outcomes
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Traditional tools generate recommendations. Our agentic AI takes action.
+            LeanKloud's agentic AI continuously improves cloud efficiency while preserving application performance and reliability.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">The LeanKloud Agentic AI Engine:</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">AI Agents:</h3>
 
               <div className="flex items-start space-x-4">
                 <div className="bg-blue-100 p-3 rounded-xl flex-shrink-0">
                   <Eye className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Observes real-time cloud signals</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Rightsize infrastructure safely</h3>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="bg-green-100 p-3 rounded-xl flex-shrink-0">
-                  <Lightbulb className="w-6 h-6 text-green-600" />
+                  <Zap className="w-6 h-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Detects inefficiencies and risk</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Orchestrate Spot capacity without workload risk</h3>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="bg-orange-100 p-3 rounded-xl flex-shrink-0">
-                  <Zap className="w-6 h-6 text-orange-600" />
+                  <Lightbulb className="w-6 h-6 text-orange-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Prioritizes optimization actions</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Optimize Databricks workloads and queries</h3>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="bg-teal-100 p-3 rounded-xl flex-shrink-0">
-                  <Brain className="w-6 h-6 text-teal-600" />
+                  <HardDrive className="w-6 h-6 text-teal-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Autonomously executes remediation</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Compress unused storage & snapshots transparently</h3>
                 </div>
               </div>
 
-              <div className="pl-14 text-gray-600 space-y-2">
-                <p className="font-semibold">Including:</p>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Rightsizing infrastructure</li>
-                  <li>Rebalancing Kubernetes workloads</li>
-                  <li>Tuning Databricks clusters</li>
-                  <li>Orchestrating spot instances</li>
-                  <li>Compressing S3 storage</li>
-                </ul>
+              <div className="flex items-start space-x-4">
+                <div className="bg-red-100 p-3 rounded-xl flex-shrink-0">
+                  <Brain className="w-6 h-6 text-red-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Manage idle resources</h3>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-purple-100 p-3 rounded-xl flex-shrink-0">
+                  <Shield className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Enforce governance guardrails</h3>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-indigo-100 p-3 rounded-xl flex-shrink-0">
+                  <Lock className="w-6 h-6 text-indigo-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Implement context-driven security compliance</h3>
+                </div>
               </div>
             </div>
 
             <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
               <p className="text-blue-900 font-semibold mb-2">
-                Autonomous execution means real savings
+                Result
               </p>
               <p className="text-blue-700">
-                While traditional tools require teams to manually implement hundreds of recommendations,
-                our agentic AI delivers continuous optimization 24/7 without human intervention.
+                Lower spend, more secure with stable or better performance. Autonomous execution means real savings — without human intervention, 24/7.
               </p>
             </div>
           </div>
@@ -87,7 +102,7 @@ export default function AgenticAI() {
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
                     <ArrowRight className="w-4 h-4" />
-                    <span>Resizing 47 underutilized instances</span>
+                    <span>Rightsizing 47 underutilized instances</span>
                   </div>
                 </div>
 
@@ -109,18 +124,18 @@ export default function AgenticAI() {
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
                     <ArrowRight className="w-4 h-4" />
-                    <span>Compressing S3 objects seamlessly</span>
+                    <span>Compressing unused S3 snapshots</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-xl p-4 transform hover:scale-105 transition-transform">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-semibold text-gray-700">AI Agent: K8s Optimizer</span>
+                    <span className="text-sm font-semibold text-gray-700">AI Agent: Governance Guard</span>
                     <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-semibold">Active</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
                     <ArrowRight className="w-4 h-4" />
-                    <span>Rightsizing pod resource requests</span>
+                    <span>Enforcing compliance guardrails</span>
                   </div>
                 </div>
 

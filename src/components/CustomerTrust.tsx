@@ -8,7 +8,7 @@ export default function CustomerTrust() {
 
   const testimonials = [
     {
-      quote: "KloudOps reduced our cloud spend by 43% in the first quarter while improving application performance. The agentic AI approach means we're continuously optimizing without dedicating engineering resources.",
+      quote: "LeanKloud reduced our cloud spend by 43% in the first quarter while improving application performance. The agentic AI approach means we're continuously optimizing without dedicating engineering resources.",
       author: "Sarah Chen",
       title: "VP of Engineering",
       company: "TechCorp"
@@ -20,7 +20,7 @@ export default function CustomerTrust() {
       company: "DataFlow"
     },
     {
-      quote: "What sets KloudOps apart is the autonomous execution. We're not drowning in recommendations—the platform just makes our infrastructure more efficient automatically, with complete transparency.",
+      quote: "What sets LeanKloud apart is the autonomous execution. We're not drowning in recommendations — the platform just makes our infrastructure more efficient automatically, with complete transparency.",
       author: "Jennifer Park",
       title: "CTO",
       company: "CloudScale"
@@ -35,7 +35,7 @@ export default function CustomerTrust() {
             Trusted by Leading Organizations
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Companies of all sizes rely on our platform to optimize their cloud operations
+            Companies of all sizes rely on LeanKloud to optimize their cloud operations
           </p>
         </div>
 

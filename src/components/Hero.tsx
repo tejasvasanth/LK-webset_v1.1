@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles, TrendingDown, Gauge, Shield, Activity } from 'lucide-react';
+import { ArrowRight, Sparkles, TrendingDown, Gauge, Shield, Activity, Eye } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -12,20 +12,17 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Autonomous Cloud Operations for the AI Era
+              Autonomous Cloud Optimization Without Compromising Business Outcomes
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              LeanKloud is an AI-driven Cloud Operations and FinOps automation platform that continuously optimizes cloud infrastructure, Kubernetes clusters, and data platforms — reducing cost, improving performance, and enforcing governance automatically.
+              Powered by agentic AI, LeanKloud continuously optimizes all cloud assets and services — including Kubernetes and Databricks — to reduce cost, improve performance, and automate governance and security compliance without compromising application performance or business outcomes.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg">
-                <span>Request a Demo</span>
+                <span>Request Demo</span>
                 <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="bg-white hover:bg-gray-50 text-blue-600 px-8 py-4 rounded-lg font-semibold transition-all border-2 border-blue-600">
-                Start Your Kloudlens Assessment
               </button>
             </div>
 
@@ -35,7 +32,7 @@ export default function Hero() {
                   <Sparkles className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">AI Ops + FinOps Automation</p>
+                  <p className="font-semibold text-gray-900">AI Ops & FinOps Automation</p>
                 </div>
               </div>
 
@@ -44,7 +41,7 @@ export default function Hero() {
                   <TrendingDown className="w-5 h-5 text-green-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Kubernetes & Databricks Optimization</p>
+                  <p className="font-semibold text-gray-900">Databricks & Kubernetes Optimization</p>
                 </div>
               </div>
 
@@ -53,25 +50,34 @@ export default function Hero() {
                   <Gauge className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Agentic Spot Orchestration</p>
+                  <p className="font-semibold text-gray-900">Agentic Spot & Storage Efficiency</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3 group">
                 <div className="bg-teal-100 p-2 rounded-lg group-hover:bg-teal-200 transition-colors">
-                  <Activity className="w-5 h-5 text-teal-600" />
+                  <Eye className="w-5 h-5 text-teal-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Intelligent Storage Compression</p>
+                  <p className="font-semibold text-gray-900">Application Cost Visibility & TCO Insights</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3 group col-span-2">
+              <div className="flex items-start space-x-3 group">
                 <div className="bg-purple-100 p-2 rounded-lg group-hover:bg-purple-200 transition-colors">
                   <Shield className="w-5 h-5 text-purple-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Application-Level TCO Visibility</p>
+                  <p className="font-semibold text-gray-900">Continuous Governance, Compliance & Security</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3 group">
+                <div className="bg-cyan-100 p-2 rounded-lg group-hover:bg-cyan-200 transition-colors">
+                  <Activity className="w-5 h-5 text-cyan-600" />
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Optimization Without Performance Trade-offs</p>
                 </div>
               </div>
             </div>

@@ -20,7 +20,21 @@ export default function Navigation() {
             <Link to="/solutions" className={`${isActive('/solutions')} transition-colors font-medium`}>Solutions</Link>
             <Link to="/capabilities" className={`${isActive('/capabilities')} transition-colors font-medium`}>Capabilities</Link>
             <Link to="/customers" className={`${isActive('/customers')} transition-colors font-medium`}>Customers</Link>
-            <Link to="/company" className={`${isActive('/company')} transition-colors font-medium`}>Company</Link>
+            <div className="relative group h-full flex items-center">
+              <button className={`${isActive('/company') || isActive('/resources') ? 'text-blue-600' : 'text-gray-700'} hover:text-blue-600 transition-colors font-medium flex items-center h-full`}>
+                Company
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {/* Invisible bridge to prevent hover loss */}
+              <div className="absolute top-full left-0 w-48 pt-2 hidden group-hover:block">
+                <div className="bg-white rounded-md shadow-lg py-1 border border-gray-100">
+                  <Link to="/company" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">About</Link>
+                  <Link to="/resources" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">Blogs and Case Studies</Link>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="flex items-center space-x-4">

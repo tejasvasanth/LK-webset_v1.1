@@ -10,6 +10,8 @@ import Solutions from './pages/Solutions';
 import CapabilitiesPage from './pages/Capabilities';
 import Customers from './pages/Customers';
 import Company from './pages/Company';
+import Resources from './pages/Resources';
+import BlogDetail from './pages/BlogDetail';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/capabilities" element={<CapabilitiesPage />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/company" element={<Company />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/resources/blog/:id" element={<BlogDetail />} />
         </Routes>
       </MainLayout>
     </Router>

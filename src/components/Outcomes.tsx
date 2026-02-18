@@ -1,48 +1,48 @@
-import { TrendingDown, Zap, Shield, DollarSign } from 'lucide-react';
+import { TrendingDown, Zap, Shield, DollarSign, Activity, Target } from 'lucide-react';
 
 export default function Outcomes() {
   const outcomes = [
     {
       icon: TrendingDown,
-      metric: '30-60%',
-      label: 'reduction in cloud waste',
-      description: 'Average cost savings from automated optimization',
+      metric: '30–60%',
+      label: 'Reduction in Cloud Waste',
+      description: 'Average cost savings from automated, continuous optimization across all cloud assets.',
       color: 'green'
     },
     {
       icon: Zap,
       metric: 'Improved',
-      label: 'workload performance',
-      description: 'Faster workloads through intelligent resource allocation',
+      label: 'Workload Performance',
+      description: 'Faster workloads through intelligent resource allocation without performance trade-offs.',
       color: 'blue'
-    },
-    {
-      icon: Zap,
-      metric: 'Higher',
-      label: 'Kubernetes utilization',
-      description: 'Optimized container density and resource usage',
-      color: 'teal'
-    },
-    {
-      icon: DollarSign,
-      metric: 'Reduced',
-      label: 'Databricks compute costs',
-      description: 'Efficient cluster sizing and query optimization',
-      color: 'orange'
     },
     {
       icon: Shield,
       metric: 'Stronger',
-      label: 'governance posture',
-      description: 'Automated compliance and policy enforcement',
-      color: 'blue' // Using blue as a safe fallback
+      label: 'Governance & Compliance Posture',
+      description: 'Automated compliance enforcement, security guardrails, and policy management.',
+      color: 'teal'
+    },
+    {
+      icon: Activity,
+      metric: 'Higher',
+      label: 'Engineering Productivity',
+      description: 'Free teams from manual optimization tasks to focus on building and innovation.',
+      color: 'orange'
     },
     {
       icon: DollarSign,
-      metric: 'Increased',
-      label: 'cost transparency',
-      description: 'Clear visibility into cloud spend and allocation',
+      metric: 'Zero',
+      label: 'Operational Risk',
+      description: 'Optimization without compromising application performance or business outcomes.',
       color: 'green'
+    },
+    {
+      icon: Target,
+      metric: 'Better',
+      label: 'Spend-to-Value Alignment',
+      description: 'Better alignment between infrastructure spend and business value through application-level TCO visibility.',
+      color: 'blue'
     }
   ];
 
@@ -74,7 +74,7 @@ export default function Outcomes() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Measurable Business Impact
+            Business Outcomes Delivered
           </h2>
         </div>
 

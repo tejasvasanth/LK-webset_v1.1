@@ -1,6 +1,16 @@
 import { Search, CheckCircle, ArrowRight, BarChart } from 'lucide-react';
 
 export default function Kloudlens() {
+  const pillars = [
+    'Design',
+    'Architecture',
+    'Security',
+    'Network',
+    'Infrastructure as Code (IAC)',
+    'Observability',
+    'Cost Efficiency',
+  ];
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-teal-600">
       <div className="max-w-7xl mx-auto">
@@ -12,34 +22,20 @@ export default function Kloudlens() {
             </div>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Kloudlens — Cloud, FinOps & AI Maturity Assessment
+              Kloudlens: Understand Your Cloud Maturity in Minutes
             </h2>
 
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Kloudlens delivers a rapid, structured evaluation of your cloud environment across:
+              Kloudlens evaluates across various pillars to deliver a prioritized improvement roadmap:
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0" />
-                <span className="text-white text-lg">FinOps maturity and cost governance</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0" />
-                <span className="text-white text-lg">Kubernetes resource efficiency</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0" />
-                <span className="text-white text-lg">Databricks cluster and workload optimization</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0" />
-                <span className="text-white text-lg">Security and compliance posture</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0" />
-                <span className="text-white text-lg">Automation and AI readiness</span>
-              </div>
+              {pillars.map((pillar) => (
+                <div key={pillar} className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0" />
+                  <span className="text-white text-lg">{pillar}</span>
+                </div>
+              ))}
             </div>
 
             <div className="mb-8">
@@ -61,7 +57,7 @@ export default function Kloudlens() {
             </div>
 
             <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center space-x-2 shadow-lg transform hover:scale-105">
-              <span>Start Your Assessment</span>
+              <span>Start Kloudlens Assessment</span>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
@@ -82,61 +78,29 @@ export default function Kloudlens() {
               </div>
 
               <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                    <span>Cost Efficiency</span>
-                    <span className="text-green-600">85%</span>
+                {[
+                  { label: 'Design & Architecture', score: '85%', color: 'bg-green-500', width: 'w-5/6', textColor: 'text-green-600' },
+                  { label: 'Security', score: '68%', color: 'bg-blue-500', width: 'w-2/3', textColor: 'text-blue-600' },
+                  { label: 'Cost Efficiency', score: '52%', color: 'bg-orange-500', width: 'w-1/2', textColor: 'text-orange-600' },
+                  { label: 'Observability', score: '79%', color: 'bg-teal-500', width: 'w-4/5', textColor: 'text-teal-600' },
+                  { label: 'IAC Readiness', score: '41%', color: 'bg-red-500', width: 'w-2/5', textColor: 'text-red-600' },
+                ].map((item) => (
+                  <div key={item.label}>
+                    <div className="flex justify-between text-sm font-semibold text-gray-700 mb-2">
+                      <span>{item.label}</span>
+                      <span className={item.textColor}>{item.score}</span>
+                    </div>
+                    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                      <div className={`h-full ${item.color} ${item.width}`}></div>
+                    </div>
                   </div>
-                  <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-green-500 w-5/6"></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                    <span>Governance</span>
-                    <span className="text-blue-600">68%</span>
-                  </div>
-                  <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-blue-500 w-2/3"></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                    <span>Kubernetes Optimization</span>
-                    <span className="text-orange-600">52%</span>
-                  </div>
-                  <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-orange-500 w-1/2"></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                    <span>Data Platforms</span>
-                    <span className="text-teal-600">79%</span>
-                  </div>
-                  <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-teal-500 w-4/5"></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                    <span>AI Readiness</span>
-                    <span className="text-red-600">41%</span>
-                  </div>
-                  <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-red-500 w-2/5"></div>
-                  </div>
-                </div>
+                ))}
               </div>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-600 mb-2 font-semibold">Top Priority:</p>
                 <p className="text-gray-900">
-                  Kubernetes resource optimization could save $38K/month
+                  Infrastructure as Code adoption could improve governance score by 30%
                 </p>
               </div>
             </div>

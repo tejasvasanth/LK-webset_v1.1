@@ -5,7 +5,7 @@ export default function PlatformOverview() {
     {
       name: 'Kloudlens',
       description: 'Assess',
-      detail: 'Rapid cloud maturity and optimization readiness assessment.',
+      detail: 'Assess maturity and optimization potential across your cloud environment.',
       icon: Search,
       color: 'blue',
       gradient: 'from-blue-500 to-cyan-500'
@@ -13,7 +13,7 @@ export default function PlatformOverview() {
     {
       name: 'KloudControl',
       description: 'Optimize',
-      detail: 'Continuous cost and performance optimization across infrastructure and data platforms.',
+      detail: 'Optimize cost and performance continuously across infrastructure and data platforms.',
       icon: Settings,
       color: 'green',
       gradient: 'from-green-500 to-emerald-500'
@@ -21,7 +21,7 @@ export default function PlatformOverview() {
     {
       name: 'KloudGuard',
       description: 'Govern',
-      detail: 'AI-driven compliance, posture management, and cost guardrails.',
+      detail: 'Govern, secure, and enforce compliance automatically with AI-driven guardrails.',
       icon: Shield,
       color: 'orange',
       gradient: 'from-orange-500 to-red-500'
@@ -29,7 +29,7 @@ export default function PlatformOverview() {
     {
       name: 'KloudOps',
       description: 'Operate',
-      detail: 'Application-aware operations and total cost of ownership analytics.',
+      detail: 'Agentic automation that integrates KloudControl & KloudGuard for autonomous operations.',
       icon: Layers,
       color: 'teal',
       gradient: 'from-teal-500 to-blue-500'
@@ -41,14 +41,14 @@ export default function PlatformOverview() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            A Unified AI Ops + FinOps Automation Platform
+            A Unified AI Ops & FinOps Optimization Platform
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            LeanKloud integrates assessment, optimization, governance, and application intelligence into a single operational layer.
+            LeanKloud helps enterprises assess, optimize, govern, and operate cloud environments intelligently through four integrated capabilities.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {products.map((product) => (
             <div
               key={product.name}
@@ -63,12 +63,19 @@ export default function PlatformOverview() {
               <div className="p-6">
                 <p className="text-gray-600 mb-4 leading-relaxed">{product.detail}</p>
                 <button className="text-blue-600 font-semibold flex items-center space-x-2 group-hover:space-x-3 transition-all">
-                  <span>Explore Platform</span>
+                  <span>Learn More</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center space-x-2 shadow-lg transform hover:scale-105">
+            <span>Explore Platform</span>
+            <ArrowRight className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </section>
